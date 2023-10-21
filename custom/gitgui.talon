@@ -1,4 +1,5 @@
 app.exe: wish8.6
+app.exe: wish.exe
 -
 reload it:key(f5)
 revert changes:key(ctrl-j)
