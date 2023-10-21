@@ -13,7 +13,7 @@ settings():
     user.help_max_contexts_per_page = 20
 
     # The default amount used when scrolling continuously
-    user.mouse_continuous_scroll_amount = 80
+    user.mouse_continuous_scroll_amount = 200
 
     # Stop continuous scroll/gaze scroll with a pop
     user.mouse_enable_pop_stops_scroll = 1
@@ -22,7 +22,7 @@ settings():
     # 0 = off
     # 1 = on with eyetracker but not zoom mouse mode
     # 2 = on but not with zoom mouse mode
-    user.mouse_enable_pop_click = 1
+    user.mouse_enable_pop_click = 0
 
     # Uncomment the below to enable mouse scroll down using hiss noise
     # user.mouse_enable_hiss_scroll = 1
