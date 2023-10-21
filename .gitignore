@@ -5,5 +5,7 @@ __pycache__
 # Locally generated
 /settings/websites.csv
 /settings/system_paths.csv
+/custom/sensitive-windows.talon
+/custom/sensitive-linux.talon
 .vscode/settings.json
 .DS_Store
