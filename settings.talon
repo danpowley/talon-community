@@ -1,5 +1,8 @@
 -
 settings():
+    # Configure Cursorless to use settings directory under source control
+    user.cursorless_settings_directory = "talon-community/cursorless-settings"
+
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3
 
