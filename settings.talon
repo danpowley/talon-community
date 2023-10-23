@@ -5,8 +5,6 @@ settings():
 
     # Mode indicator settings
     user.mode_indicator_show = 1
-    user.mode_indicator_x = 0.88
-    user.mode_indicator_y = 0.01
 
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3
