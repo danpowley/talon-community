@@ -6,6 +6,6 @@ __pycache__
 /settings/websites.csv
 /settings/system_paths.csv
 /custom/sensitive-windows.talon
-/custom/sensitive-linux.talon
+/custom/*-sensitive.talon
 .vscode/settings.json
 .DS_Store
