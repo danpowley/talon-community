@@ -7,3 +7,5 @@ window mid:key("super-down")
 
 desktop next:key("super-ctrl-right")
 desktop (previous|last):key("super-ctrl-left")
+
+focus toggle:key("alt-tab")
