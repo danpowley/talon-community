@@ -1,1 +1,0 @@
-focus toggle:key("alt-tab")
