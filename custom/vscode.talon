@@ -8,6 +8,9 @@ last terminal: key(ctrl-pageup)
 terminal: key(ctrl-`)
 
 toggle panels: key(ctrl-b)
+toggle minimap: user.vscode("editor.action.toggleMinimap")
+toggle word wrap: key(alt-z)
+show menu: key(alt)
 search everywhere: key(ctrl-shift-p)
 recent files: key(ctrl-p)
 project: key(ctrl-shift-e)
@@ -36,5 +39,3 @@ editor five: key(ctrl-5)
 editor six: key(ctrl-6)
 
 lint disable line: insert("// eslint-disable-next-line no-console")
-
-toggle word wrap: key(alt-z)
