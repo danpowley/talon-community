@@ -5,7 +5,7 @@ show settings: key(ctrl-,)
 
 next terminal: key(ctrl-pagedown)
 last terminal: key(ctrl-pageup)
-terminal: user.vscode("workbench.action.terminal.toggleTerminal")
+terminal: key(ctrl-`)
 
 toggle panels: key(ctrl-b)
 toggle minimap: user.vscode("editor.action.toggleMinimap")
