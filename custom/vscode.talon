@@ -3,9 +3,19 @@ app: vscode
 confetti: user.vscode("cursorless.toggleDecorations")
 show settings: key(ctrl-,)
 
-next terminal: key(ctrl-pagedown)
-last terminal: key(ctrl-pageup)
 terminal: key(ctrl-`)
+new terminal: key(ctrl-shift-`)
+new split terminal: key(ctrl-shift-5)
+next terminal group: key(ctrl-pagedown)
+last terminal group: key(ctrl-pageup)
+next terminal:
+    key(alt-right)
+    sleep(100ms)
+    key(alt)
+last terminal:
+    key(alt-left)
+    sleep(100ms)
+    key(alt)
 
 toggle panels: key(ctrl-b)
 toggle minimap: user.vscode("editor.action.toggleMinimap")
@@ -26,7 +36,7 @@ new editor: key(ctrl-n)
 new window: key(ctrl-shift-n)
 
 split editor: key(ctrl-\)
-split editor down: 
+split editor down:
     key(ctrl-k)
     key(ctrl-\)
 split end: user.vscode("workbench.action.joinAllGroups")
