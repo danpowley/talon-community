@@ -13,19 +13,19 @@ terminal history:
     key("ctrl-r")
 composer analyze:
     insert("composer ci-analyse-application")
-composer build: 
+composer build:
     insert("composer ci-build")
-webpack build: 
+webpack build:
     insert("composer webpack-build-development")
 view build:
     insert("composer vue-build-production")
-doctrine migrate: 
+doctrine migrate:
     insert("php bin/console doctrine:migrations:migrate")
-doctrine status: 
+doctrine status:
     insert("php bin/console doctrine:migrations:status")
-doctrine generate: 
+doctrine generate:
     insert("php bin/console doctrine:migrations:generate")
-doctrine migrations difference: 
+doctrine migrations difference:
     insert("php bin/console doctrine:migrations:diff")
 
 checkout develop:insert("git checkout develop")
@@ -42,3 +42,5 @@ checkout new branch:
     key("alt-b left")
 delete branch:
     insert("git branch -d feature/")
+
+launch code: insert("code .")
