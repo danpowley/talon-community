@@ -24,8 +24,11 @@ show menu: key(alt)
 search everywhere: key(ctrl-shift-p)
 recent files: key(ctrl-p)
 project: key(ctrl-shift-e)
+open editors: user.vscode("workbench.files.action.focusOpenEditorsView")
 collapse project: user.vscode("workbench.files.action.collapseExplorerFolders")
 crosshairs: user.vscode("workbench.files.action.showActiveFileInExplorer")
+search file:key(ctrl-f)
+replace in file:key(ctrl-h)
 find in files: key(ctrl-shift-f)
 toggle problems: key(ctrl-shift-m)
 next problem: key(shift-f8)
@@ -49,3 +52,25 @@ editor five: key(ctrl-5)
 editor six: key(ctrl-6)
 
 lint disable line: insert("// eslint-disable-next-line no-console")
+
+go to definition: key(f12)
+find references: key(shift-alt-f12)
+
+tidy search:
+    key(ctrl-f)
+    key(backspace)
+    key(ctrl-h)
+    key(backspace)
+    key(escape)
+
+tidy find in files:
+    key(ctrl-shift-f)
+    key(backspace)
+    key(ctrl-shift-e)
+
+auto compile less:
+    key("ctrl-`")
+    sleep(200ms)
+    insert("npm run less\n")
+    sleep(2000ms)
+    key("ctrl-`")

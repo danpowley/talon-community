@@ -15,4 +15,9 @@ focus edge:key("super-2")
 focus chrome:key("super-3")
 focus code:key("super-4")
 focus keepass:key("super-5")
-focus git:key("super-7")
+focus command:key("super-6")
+focus git:key("super-8")
+
+focus dev browser:
+    key("super-1")
+    key("ctrl-1")
