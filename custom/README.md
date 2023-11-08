@@ -6,3 +6,5 @@
 - paren
 - enter?
 - brace
+- repeat last command (ideally with parrot noise)
+- parrot

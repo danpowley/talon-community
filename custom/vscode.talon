@@ -1,5 +1,8 @@
 app: vscode
 -
+# add git to docker container
+install git: insert("apt-get -y update && apt-get -y install git")
+
 confetti: user.vscode("cursorless.toggleDecorations")
 show settings: key(ctrl-,)
 
