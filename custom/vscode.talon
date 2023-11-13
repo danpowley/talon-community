@@ -78,3 +78,11 @@ auto compile less:
     insert("npm run less\n")
     sleep(2000ms)
     key("ctrl-`")
+
+# source control
+source control: user.vscode("workbench.view.scm")
+stage to commit: user.vscode("git.stage")
+unstage: user.vscode("git.unstage")
+confirm commit: user.vscode("git.commit")
+next change: user.vscode("workbench.action.compareEditor.nextChange")
+(previous|last) change: user.vscode("workbench.action.compareEditor.previousChange")
