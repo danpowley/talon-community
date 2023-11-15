@@ -91,7 +91,7 @@ def update_snippets():
 
 
 def get_snippets() -> list[Snippet]:
-    files = glob.glob(f"{SNIPPETS_DIR}/**/*.snippet", recursive=True)
+    files = glob.glob(f"{SNIPPETS_DIR}/**/*.disabled_snippet", recursive=True)
 
     if get_setting_dir():
         files.extend(glob.glob(f"{get_setting_dir()}/**/*.snippet", recursive=True))
