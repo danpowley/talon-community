@@ -85,3 +85,11 @@ unstage: user.vscode("git.unstage")
 confirm commit: user.vscode("git.commit")
 next change: user.vscode("workbench.action.compareEditor.nextChange")
 (previous|last) change: user.vscode("workbench.action.compareEditor.previousChange")
+
+# debug
+step over:key("f10")
+step into:key("f11")
+step out:key("shift-f11")
+resume program:key("f5")
+stop debugging:key("shift-f5")
+restart debugging:key("ctrl-shift-f5")
