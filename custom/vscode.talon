@@ -11,14 +11,6 @@ new terminal: key(ctrl-shift-`)
 new split terminal: key(ctrl-shift-5)
 next terminal group: key(ctrl-pagedown)
 last terminal group: key(ctrl-pageup)
-next terminal:
-    key(alt-right)
-    sleep(100ms)
-    key(alt)
-last terminal:
-    key(alt-left)
-    sleep(100ms)
-    key(alt)
 
 toggle panels: key(ctrl-b)
 toggle minimap: user.vscode("editor.action.toggleMinimap")
