@@ -79,6 +79,7 @@ next change: user.vscode("workbench.action.compareEditor.nextChange")
 (previous|last) change: user.vscode("workbench.action.compareEditor.previousChange")
 move to accept commit message: mouse_move(2708, 225)
 show git output: user.vscode("git.showOutput")
+close all diff editors: user.vscode("git.closeAllDiffEditors")
 
 # debug
 step over:key("f10")
