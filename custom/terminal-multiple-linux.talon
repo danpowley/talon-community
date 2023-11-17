@@ -42,5 +42,3 @@ checkout new branch:
     key("alt-b left")
 delete branch:
     insert("git branch -d feature/")
-
-launch code: insert("code .")
