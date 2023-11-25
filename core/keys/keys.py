@@ -212,7 +212,7 @@ symbol_key_words = {
     "star": "*",
     "hash": "#",
     "percent": "%",
-    "caret": "^",
+     # (always mixes up with clear right) "caret": "^",
     "amper": "&",
     "pipe": "|",
     "dub quote": '"',
@@ -220,6 +220,22 @@ symbol_key_words = {
     # Currencies
     "dollar": "$",
     "pound": "£",
+    "swirl": "@",
+    "dizzy": "@",
+    "foot": "'",
+    "inch": '"',
+    "score": "_",
+    "drip": ",",
+    "dripper": ";",
+    "stack": ":",
+    "curve": "(",
+    "recurve": ")",
+    "stash": "{",
+    "re stash": "}",
+    "re square": "]",
+    "dire ": "<",
+    "monde": ">",
+    "dagger": "^",
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -253,6 +269,11 @@ alternate_keys = {
     "forward delete": "delete",
     "page up": "pageup",
     "page down": "pagedown",
+    "swing": "tab",
+    "okay": "enter",
+    "ta": "space",
+    "dusk": "pageup",
+    "dawn": "pagedown",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
