@@ -13,16 +13,12 @@ gamepad(r2):
     sound.set_microphone("System Default")
 
 # X
-#gamepad(north:down):
-#    tracking.control_toggle(true)
+gamepad(north:down):
+    tracking.control_toggle(true)
 
 # X
-#gamepad(north:up):
-#    tracking.control_toggle(false)
-
-# X
-gamepad(north):
-    user.mouse_hiss_on(5)
+gamepad(north:up):
+    tracking.control_toggle(false)
 
 # Y
 gamepad(west:down):

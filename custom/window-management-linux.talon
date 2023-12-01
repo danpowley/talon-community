@@ -14,7 +14,7 @@ focus (browser|chrome):key("super-3")
 focus code:key("super-4")
 focus database:key("super-5")
 focus key pass:key("super-6")
-focus git:key("super-7")
+focus excel:key("super-7")
 
 focus everything:
     key(super-2)

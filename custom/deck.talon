@@ -5,7 +5,7 @@ deck(pedal_middle:up):
     tracking.control_toggle(false)
 
 deck(pedal_left:repeat):
-    mouse_scroll(10)
+    user.mouse_scroll_down(0.02)
 
 deck(pedal_right:repeat):
-    mouse_scroll(10)
+    user.mouse_scroll_up(0.02)

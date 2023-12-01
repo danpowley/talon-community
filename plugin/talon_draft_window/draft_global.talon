@@ -1,5 +1,6 @@
 # These are available globally (in command mode)
 mode: command
+os: mac
 -
 ^draft show:
     # Do this toggle so we can have focus when saying 'draft show'
