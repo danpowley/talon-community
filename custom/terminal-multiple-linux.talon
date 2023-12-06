@@ -3,6 +3,8 @@ app: jetbrains
 app: gnome-terminal
 app: vscode
 -
+check IP address: insert("curl http://checkip.amazonaws.com")
+
 docker terminal:
     insert("dce bash")
 clear terminal contents:key(ctrl-l)

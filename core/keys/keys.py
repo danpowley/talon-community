@@ -236,6 +236,7 @@ symbol_key_words = {
     "dire ": "<",
     "monde": ">",
     "dagger": "^",
+    "octo": "#",
 }
 
 # make punctuation words also included in {user.symbol_keys}
