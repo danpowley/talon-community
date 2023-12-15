@@ -272,7 +272,7 @@ alternate_keys = {
     "page down": "pagedown",
     "swing": "tab",
     "okay": "enter",
-    "ta": "space",
+    "ace": "space",
     "dusk": "pageup",
     "dawn": "pagedown",
 }
