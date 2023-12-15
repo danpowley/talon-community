@@ -1,5 +1,5 @@
-tick:
+track on:
     tracking.control_toggle(true)
 
-tock|tack:
+track off:
     tracking.control_toggle(false)
