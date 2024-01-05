@@ -2,7 +2,7 @@ os: linux
 -
 settings():
     # Mode indicator settings
-    user.mode_indicator_x = 0.88
+    user.mode_indicator_x = 0.86
     user.mode_indicator_y = 0.01
 
     # The default amount used when scrolling continuously
