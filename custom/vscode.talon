@@ -29,6 +29,7 @@ find in files: key(ctrl-shift-f)
 toggle problems: key(ctrl-shift-m)
 next problem: key(shift-f8)
 complete: key(ctrl-space)
+format selection: user.vscode("editor.action.formatSelection")
 
 close editor: key(ctrl-w)
 new editor: key(ctrl-n)
