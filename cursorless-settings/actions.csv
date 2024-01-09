@@ -49,3 +49,5 @@ take, setSelection
 type deaf, revealTypeDefinition
 unfold, unfoldRegion
 wrap, wrapWithPairedDelimiter
+break, breakLine
+join, joinLines
