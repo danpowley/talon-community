@@ -23,6 +23,8 @@ webpack build:
     insert("composer webpack-build-development")
 view build:
     insert("composer vue-build-production")
+view serve:
+    insert("npm run serve")
 doctrine migrate:
     insert("php bin/console doctrine:migrations:migrate")
 doctrine status:
