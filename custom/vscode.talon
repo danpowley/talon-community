@@ -6,6 +6,17 @@ install git: insert("apt-get -y update && apt-get -y install git")
 confetti: user.vscode("cursorless.toggleDecorations")
 show settings: key(ctrl-,)
 
+bit more: user.vscode("editor.action.smartSelect.expand")
+bit less: user.vscode("editor.action.smartSelect.shrink")
+
+downer [<number_small>]:
+    key(ctrl-down)
+    repeat(number_small or 15)
+
+upper [<number_small>]:
+    key(ctrl-up)
+    repeat(number_small or 15)
+
 terminal: key(ctrl-`)
 new terminal: key(ctrl-shift-`)
 new split terminal: key(ctrl-shift-5)
@@ -100,3 +111,7 @@ jump: user.vscode("bookmarks.jumpToNext")
 jump back: user.vscode("bookmarks.jumpToPrevious")
 clear bookmarks file: user.vscode("bookmarks.clear")
 clear bookmarks all files: user.vscode("bookmarks.clearFromAllFiles")
+
+# markdown
+markdown preview: user.vscode("markdown.showPreview")
+markdown source: user.vscode("markdown.showSource")
