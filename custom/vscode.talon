@@ -116,3 +116,7 @@ clear bookmarks all files: user.vscode("bookmarks.clearFromAllFiles")
 # markdown
 markdown preview: user.vscode("markdown.showPreview")
 markdown source: user.vscode("markdown.showSource")
+
+# SQL
+(run|execute) query: user.vscode("mssql.runQuery")
+new query: user.vscode("mssql.newQuery")
