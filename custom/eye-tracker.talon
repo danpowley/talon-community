@@ -1,5 +1,5 @@
-track on:
+lumos:
     tracking.control_toggle(true)
 
-track off:
+nox:
     tracking.control_toggle(false)
