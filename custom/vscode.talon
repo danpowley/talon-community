@@ -41,6 +41,7 @@ toggle problems: key(ctrl-shift-m)
 next problem: key(shift-f8)
 complete: key(ctrl-space)
 format selection: user.vscode("editor.action.formatSelection")
+format document: user.vscode("editor.action.formatDocument")
 
 close editor: key(ctrl-w)
 new editor: key(ctrl-n)
