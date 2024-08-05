@@ -121,3 +121,9 @@ markdown source: user.vscode("markdown.showSource")
 # SQL
 (run|execute) query: user.vscode("mssql.runQuery")
 new query: user.vscode("mssql.newQuery")
+
+# Cursorless
+# e.g. "google search line green salty" (search google with everything matched by "line green salty")
+{user.search_engine} search <user.cursorless_target>:
+    user.cursorless_command("copyToClipboard", cursorless_target)
+    user.search_with_search_engine(search_engine, clip.text())
