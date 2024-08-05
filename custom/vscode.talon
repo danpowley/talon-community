@@ -93,6 +93,7 @@ next change: user.vscode("workbench.action.compareEditor.nextChange")
 (previous|last) change: user.vscode("workbench.action.compareEditor.previousChange")
 show git output: user.vscode("git.showOutput")
 close all diff editors: user.vscode("git.closeAllDiffEditors")
+toggle diff: user.vscode("toggle.diff.renderSideBySide")
 
 # debug
 step over:key("f10")
@@ -120,3 +121,9 @@ markdown source: user.vscode("markdown.showSource")
 # SQL
 (run|execute) query: user.vscode("mssql.runQuery")
 new query: user.vscode("mssql.newQuery")
+
+# Cursorless
+# e.g. "google search line green salty" (search google with everything matched by "line green salty")
+{user.search_engine} search <user.cursorless_target>:
+    user.cursorless_command("copyToClipboard", cursorless_target)
+    user.search_with_search_engine(search_engine, clip.text())
