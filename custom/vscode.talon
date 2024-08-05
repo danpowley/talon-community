@@ -93,6 +93,7 @@ next change: user.vscode("workbench.action.compareEditor.nextChange")
 (previous|last) change: user.vscode("workbench.action.compareEditor.previousChange")
 show git output: user.vscode("git.showOutput")
 close all diff editors: user.vscode("git.closeAllDiffEditors")
+toggle diff: user.vscode("toggle.diff.renderSideBySide")
 
 # debug
 step over:key("f10")
