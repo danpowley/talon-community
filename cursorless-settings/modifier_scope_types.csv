@@ -57,3 +57,6 @@ unit, unit
 value, value
 word, word
 glyph, glyph
+
+# 2024-08-05 16:31:20 - New entries automatically added by cursorless
+short block, boundedParagraph

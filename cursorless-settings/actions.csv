@@ -55,3 +55,6 @@ join, joinLines
 # 2024-04-15 16:33:02 - New entries automatically added by cursorless
 decrement, decrement
 increment, increment
+
+# 2024-08-05 16:31:20 - New entries automatically added by cursorless
+follow split, followLinkAside
