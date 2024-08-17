@@ -1,10 +1,6 @@
 # Custom instructions
 
 ## Issues to resolve
-- caret / clear right
-- quote and double quote
-- paren
-- enter?
-- brace
+- noise(cluck) hopefully support coming soon (use as repeat command)
 - repeat last command (ideally with parrot noise)
 - parrot

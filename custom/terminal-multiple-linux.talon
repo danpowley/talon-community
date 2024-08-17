@@ -23,6 +23,8 @@ webpack build:
     insert("composer webpack-build-development")
 view build:
     insert("composer vue-build-production")
+view serve:
+    insert("npm run serve")
 doctrine migrate:
     insert("php bin/console doctrine:migrations:migrate")
 doctrine status:
@@ -36,8 +38,7 @@ checkout develop:insert("git checkout develop")
 checkout master:insert("git checkout master")
 pull latest changes:insert("git pull")
 diff master develop:insert("git diff master..develop")
-diff master develop without package lock:insert("git diff master..develop -- . ':!package-lock.json'")
-diff master develop without composer lock:insert("git diff master..develop -- . ':!composer.lock'")
+diff master develop without lock:insert("git diff master..develop -- . ':!composer.lock' ':!package-lock.json'")
 push origin feature:insert("git push origin feature/")
 list branches:insert("git branch")
 checkout feature:insert("git checkout feature/")

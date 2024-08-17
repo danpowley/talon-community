@@ -3,6 +3,6 @@ title: /app.slack.com/i
 send message: key(ctrl-enter)
 
 begin voice call:
-    user.engine_sleep()
+    speech.disable()
     sound.set_microphone("None")
     key(ctrl-alt-shift-h)

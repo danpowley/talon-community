@@ -15,6 +15,7 @@ focus code:key("super-4")
 focus database:key("super-5")
 focus key pass:key("super-6")
 focus excel:key("super-7")
+focus firefox:key("super-8")
 
 focus everything:
     key(super-2)

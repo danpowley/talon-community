@@ -6,6 +6,17 @@ install git: insert("apt-get -y update && apt-get -y install git")
 confetti: user.vscode("cursorless.toggleDecorations")
 show settings: key(ctrl-,)
 
+bit more: user.vscode("editor.action.smartSelect.expand")
+bit less: user.vscode("editor.action.smartSelect.shrink")
+
+downer [<number_small>]:
+    key(ctrl-down)
+    repeat(number_small or 15)
+
+upper [<number_small>]:
+    key(ctrl-up)
+    repeat(number_small or 15)
+
 terminal: key(ctrl-`)
 new terminal: key(ctrl-shift-`)
 new split terminal: key(ctrl-shift-5)
@@ -30,6 +41,7 @@ toggle problems: key(ctrl-shift-m)
 next problem: key(shift-f8)
 complete: key(ctrl-space)
 format selection: user.vscode("editor.action.formatSelection")
+format document: user.vscode("editor.action.formatDocument")
 
 close editor: key(ctrl-w)
 new editor: key(ctrl-n)
@@ -81,6 +93,7 @@ next change: user.vscode("workbench.action.compareEditor.nextChange")
 (previous|last) change: user.vscode("workbench.action.compareEditor.previousChange")
 show git output: user.vscode("git.showOutput")
 close all diff editors: user.vscode("git.closeAllDiffEditors")
+toggle diff: user.vscode("toggle.diff.renderSideBySide")
 
 # debug
 step over:key("f10")
@@ -89,3 +102,28 @@ step out:key("shift-f11")
 resume program:key("f5")
 stop debugging:key("shift-f5")
 restart debugging:key("ctrl-shift-f5")
+
+# bookmarks
+bookmark panel: user.vscode("bookmarksExplorer.focus")
+file bookmarks: user.vscode("bookmarks.list")
+all bookmarks: user.vscode("bookmarks.listFromAllFiles")
+bookmark: user.vscode("bookmarks.toggle")
+labelled bookmark: user.vscode("bookmarks.toggleLabeled")
+jump: user.vscode("bookmarks.jumpToNext")
+jump back: user.vscode("bookmarks.jumpToPrevious")
+clear bookmarks file: user.vscode("bookmarks.clear")
+clear bookmarks all files: user.vscode("bookmarks.clearFromAllFiles")
+
+# markdown
+markdown preview: user.vscode("markdown.showPreview")
+markdown source: user.vscode("markdown.showSource")
+
+# SQL
+(run|execute) query: user.vscode("mssql.runQuery")
+new query: user.vscode("mssql.newQuery")
+
+# Cursorless
+# e.g. "google search line green salty" (search google with everything matched by "line green salty")
+{user.search_engine} search <user.cursorless_target>:
+    user.cursorless_command("copyToClipboard", cursorless_target)
+    user.search_with_search_engine(search_engine, clip.text())

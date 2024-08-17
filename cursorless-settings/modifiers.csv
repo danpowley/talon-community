@@ -17,3 +17,5 @@ previous, previous
 slice, verticalRange
 tail, extendThroughEndOf
 trailing, trailing
+grand, ancestor
+visible, visible

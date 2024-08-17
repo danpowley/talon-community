@@ -1,7 +1,7 @@
 os: linux
 -
 (screen lock) | (lock screen):
-    user.engine_sleep()
+    speech.disable()
     sound.set_microphone("None")
     sleep(1000ms)
     key(super-l)
