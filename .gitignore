@@ -8,3 +8,4 @@ __pycache__
 /custom/*-sensitive.talon
 .vscode/settings.json
 .DS_Store
+.bak
