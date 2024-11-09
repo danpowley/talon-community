@@ -7,14 +7,18 @@ end: end
 home: home
 minus: minus
 enter: enter
+okay: enter
 page down: pagedown
 page up: pageup
 escape: escape
 space: space
+ace: space
 tab: tab
+swing: tab
 insert: insert
 wipe: backspace
 delete: backspace
 forward delete: delete
+wash: delete
 menu key: menu
 print screen: printscr
