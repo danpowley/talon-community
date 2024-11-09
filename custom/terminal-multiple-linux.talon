@@ -15,6 +15,8 @@ terminal history:
     key("ctrl-r")
 composer analyze:
     insert("composer ci-analyse-application")
+composer test:
+    insert("composer ci-test")
 composer beautify:
     insert("composer phpcbf")
 composer build:

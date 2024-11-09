@@ -276,8 +276,6 @@ alternate_keys = {
     "swing": "tab",
     "okay": "enter",
     "ace": "space",
-    "dusk": "pageup",
-    "dawn": "pagedown",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):

@@ -1,1 +1,1 @@
-noise(pop):mouse_click()
+# noise(pop):mouse_click()

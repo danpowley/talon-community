@@ -13,7 +13,7 @@ focus terminal:key("super-2")
 focus (browser|chrome):key("super-3")
 focus code:key("super-4")
 focus database:key("super-5")
-focus key pass:key("super-6")
+password database:key("super-6")
 focus excel:key("super-7")
 focus firefox:key("super-8")
 
