@@ -61,7 +61,9 @@ mid click:
     # close zoom if open
     tracking.zoom_cancel()
     mouse_click()
+    sleep(0.1)
     mouse_click()
+    sleep(0.1)
     mouse_click()
     # close the mouse grid
     user.grid_close()

@@ -127,3 +127,7 @@ new query: user.vscode("mssql.newQuery")
 {user.search_engine} search <user.cursorless_target>:
     user.cursorless_command("copyToClipboard", cursorless_target)
     user.search_with_search_engine(search_engine, clip.text())
+
+run selection in terminal:
+    user.vscode("workbench.action.terminal.runSelectedText")
+
