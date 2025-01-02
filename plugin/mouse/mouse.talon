@@ -61,7 +61,9 @@ mid click:
     # close zoom if open
     user.zoom_close()
     mouse_click()
+    sleep(0.1)
     mouse_click()
+    sleep(0.1)
     mouse_click()
     # close the mouse grid
     user.grid_close()

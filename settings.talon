@@ -91,7 +91,7 @@ settings():
     # user.window_snap_screen = "size aware"
 
     # Puts Talon into sleep mode if no commands are spoken for a defined period of time.
-    # user.listening_timeout_minutes = 3
+    user.listening_timeout_minutes = 3
 
     # Time in seconds to wait for the clipboard to change when trying to get selected text
     # user.selected_text_timeout = 0.25
@@ -109,9 +109,9 @@ settings():
 # Enabling this tag will repeat the last command when two pops are heard within the allotted time window
 # Without this tag noise_trigger_pop is usually associated with pop to click actions
 # Enabling this tag disables other pop to click actions in command mode, including pop to click
-# tag(): user.pop_twice_to_repeat
+tag(): user.pop_twice_to_repeat
 
 # Uncomment the below to enable support for saying numbers without a prefix.
 # By default you need to say "numb one" to write "1". If you uncomment this,
 # you can say "one" to write "1".
-tag(): user.unprefixed_numbers
+# tag(): user.unprefixed_numbers

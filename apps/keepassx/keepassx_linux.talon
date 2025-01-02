@@ -20,3 +20,6 @@ find: key(ctrl-f)
 find <user.text>:
     key(ctrl-f)
     insert("{text}")
+
+# Custom
+perform auto type: key(ctrl-shift-v)
