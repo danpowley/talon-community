@@ -110,11 +110,11 @@ cut word right: user.cut_word_right()
 #     edit.cut()
 
 # Paste
-(pace | paste) that: edit.paste()
-(pace | paste) enter:
+(transfer) that: edit.paste()
+(transfer) enter:
     edit.paste()
     key(enter)
-paste match: edit.paste_match_style()
+transfer match: edit.paste_match_style()
 
 # Duplication
 clone that: edit.selection_clone()
