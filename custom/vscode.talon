@@ -4,7 +4,7 @@ app: vscode
 install git: insert("apt-get -y update && apt-get -y install git")
 
 confetti: user.vscode("cursorless.toggleDecorations")
-show settings: key(ctrl-,)
+show settings: user.vscode("workbench.action.openGlobalSettings")
 
 bit more: user.vscode("editor.action.smartSelect.expand")
 bit less: user.vscode("editor.action.smartSelect.shrink")
@@ -17,11 +17,12 @@ upper [<number_small>]:
     key(ctrl-up)
     repeat(number_small or 15)
 
-terminal: key(ctrl-`)
-new terminal: key(ctrl-shift-`)
-new split terminal: key(ctrl-shift-5)
-next terminal group: key(ctrl-pagedown)
-last terminal group: key(ctrl-pageup)
+terminal: user.vscode("workbench.action.terminal.toggleTerminal")
+new terminal: user.vscode("workbench.action.terminal.new")
+new split terminal: user.vscode("workbench.action.terminal.split")
+next terminal: user.vscode("workbench.action.terminal.focusNextPane")
+next terminal group: user.vscode("workbench.action.terminal.focusNext")
+last terminal group: user.vscode("workbench.action.terminal.focusPrevious")
 
 toggle panels: key(ctrl-b)
 toggle minimap: user.vscode("editor.action.toggleMinimap")
