@@ -1,46 +1,33 @@
 app: vscode
 -
-# add git to docker container
-install git: insert("apt-get -y update && apt-get -y install git")
-
 confetti: user.vscode("cursorless.toggleDecorations")
 show settings: user.vscode("workbench.action.openGlobalSettings")
 
 bit more: user.vscode("editor.action.smartSelect.expand")
 bit less: user.vscode("editor.action.smartSelect.shrink")
 
-downer [<number_small>]:
-    key(ctrl-down)
-    repeat(number_small or 15)
-
-upper [<number_small>]:
-    key(ctrl-up)
-    repeat(number_small or 15)
-
 terminal: user.vscode("workbench.action.terminal.toggleTerminal")
 new terminal: user.vscode("workbench.action.terminal.new")
 new split terminal: user.vscode("workbench.action.terminal.split")
 next terminal: user.vscode("workbench.action.terminal.focusNextPane")
+last terminal: user.vscode("workbench.action.terminal.focusPreviousPane")
 next terminal group: user.vscode("workbench.action.terminal.focusNext")
 last terminal group: user.vscode("workbench.action.terminal.focusPrevious")
 
-toggle panels: key(ctrl-b)
+toggle panels: user.vscode("workbench.action.toggleSidebarVisibility")
 toggle minimap: user.vscode("editor.action.toggleMinimap")
-toggle word wrap: key(alt-z)
-show menu: key(alt)
-search everywhere: key(ctrl-shift-p)
-recent files: key(ctrl-p)
-project: key(ctrl-shift-e)
+toggle word wrap: user.vscode("editor.action.toggleWordWrap")
+recent files: user.vscode("workbench.action.quickOpen")
+project: user.vscode("workbench.view.explorer")
 breadcrumbs: user.vscode("breadcrumbs.focusAndSelect")
 open editors: user.vscode("workbench.files.action.focusOpenEditorsView")
 collapse project: user.vscode("workbench.files.action.collapseExplorerFolders")
 crosshairs: user.vscode("workbench.files.action.showActiveFileInExplorer")
-search file:key(ctrl-f)
-replace in file:key(ctrl-h)
-find in files: key(ctrl-shift-f)
-toggle problems: key(ctrl-shift-m)
-next problem: key(shift-f8)
-complete: key(ctrl-space)
+search file: user.vscode("actions.find")
+replace in file: user.vscode("editor.action.startFindReplaceAction")
+find in files: user.vscode("workbench.action.findInFiles")
+problems: user.vscode("workbench.actions.view.problems")
+complete: user.vscode("editor.action.triggerSuggest")
 format selection: user.vscode("editor.action.formatSelection")
 format document: user.vscode("editor.action.formatDocument")
 
