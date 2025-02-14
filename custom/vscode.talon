@@ -44,7 +44,6 @@ editor two: user.vscode("workbench.action.focusSecondEditorGroup")
 
 lint disable line: insert("// eslint-disable-next-line no-console")
 
-#: user.vscode("")
 go to definition: user.vscode("editor.action.revealDefinition")
 find references: user.vscode("editor.action.findReferences")
 
