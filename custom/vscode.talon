@@ -31,46 +31,29 @@ complete: user.vscode("editor.action.triggerSuggest")
 format selection: user.vscode("editor.action.formatSelection")
 format document: user.vscode("editor.action.formatDocument")
 
-close editor: key(ctrl-w)
-new editor: key(ctrl-n)
-new window: key(ctrl-shift-n)
+close editor: user.vscode("workbench.action.closeActiveEditor")
+new editor: user.vscode("workbench.action.files.newUntitledFile")
+new window: user.vscode("workbench.action.newWindow")
 
-split editor: key(ctrl-\)
-split editor down:
-    key(ctrl-k)
-    key(ctrl-\)
+split editor: user.vscode("workbench.action.splitEditor")
+split editor down: user.vscode("workbench.action.splitEditorDown")
 split end: user.vscode("workbench.action.joinAllGroups")
 
-editor one: key(ctrl-1)
-editor two: key(ctrl-2)
-editor three: key(ctrl-3)
-editor for: key(ctrl-4)
-editor five: key(ctrl-5)
-editor six: key(ctrl-6)
+editor one: user.vscode("workbench.action.focusFirstEditorGroup")
+editor two: user.vscode("workbench.action.focusSecondEditorGroup")
 
 lint disable line: insert("// eslint-disable-next-line no-console")
 
-go to definition: key(f12)
-find references: key(shift-alt-f12)
+#: user.vscode("")
+go to definition: user.vscode("editor.action.revealDefinition")
+find references: user.vscode("editor.action.findReferences")
 
 tidy search:
-    key(ctrl-f)
+    user.vscode("actions.find")
     key(backspace)
-    key(ctrl-h)
+    user.vscode("editor.action.startFindReplaceAction")
     key(backspace)
     key(escape)
-
-tidy find in files:
-    key(ctrl-shift-f)
-    key(backspace)
-    key(ctrl-shift-e)
-
-auto compile less:
-    key("ctrl-`")
-    sleep(200ms)
-    insert("npm run less\n")
-    sleep(2000ms)
-    key("ctrl-`")
 
 # source control
 source control: user.vscode("workbench.view.scm")
