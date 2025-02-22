@@ -6,13 +6,17 @@ end: end
 home: home
 minus: minus
 return: return
+okay: return
 enter: keypad_enter
 page down: pagedown
 page up: pageup
 escape: escape
 space: space
+ace: space
 tab: tab
+swing: tab
 insert: insert
 wipe: backspace
 delete: backspace
 forward delete: delete
+wash: delete

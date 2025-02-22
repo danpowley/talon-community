@@ -58,3 +58,9 @@ increment, increment
 
 # 2024-08-05 16:31:20 - New entries automatically added by cursorless
 follow split, followLinkAside
+
+# 2025-01-29 15:40:06 - New entries automatically added by cursorless
+append, addSelection
+append post, addSelectionAfter
+append pre, addSelectionBefore
+flash, flashTargets
