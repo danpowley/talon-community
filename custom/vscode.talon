@@ -1,88 +1,58 @@
 app: vscode
 -
-# add git to docker container
-install git: insert("apt-get -y update && apt-get -y install git")
-
 confetti: user.vscode("cursorless.toggleDecorations")
-show settings: key(ctrl-,)
+show settings: user.vscode("workbench.action.openGlobalSettings")
 
 bit more: user.vscode("editor.action.smartSelect.expand")
 bit less: user.vscode("editor.action.smartSelect.shrink")
 
-downer [<number_small>]:
-    key(ctrl-down)
-    repeat(number_small or 15)
+terminal: user.vscode("workbench.action.terminal.toggleTerminal")
+new terminal: user.vscode("workbench.action.terminal.new")
+new split terminal: user.vscode("workbench.action.terminal.split")
+next terminal: user.vscode("workbench.action.terminal.focusNextPane")
+last terminal: user.vscode("workbench.action.terminal.focusPreviousPane")
+next terminal group: user.vscode("workbench.action.terminal.focusNext")
+last terminal group: user.vscode("workbench.action.terminal.focusPrevious")
 
-upper [<number_small>]:
-    key(ctrl-up)
-    repeat(number_small or 15)
-
-terminal: key(ctrl-`)
-new terminal: key(ctrl-shift-`)
-new split terminal: key(ctrl-shift-5)
-next terminal group: key(ctrl-pagedown)
-last terminal group: key(ctrl-pageup)
-
-toggle panels: key(ctrl-b)
+toggle panels: user.vscode("workbench.action.toggleSidebarVisibility")
 toggle minimap: user.vscode("editor.action.toggleMinimap")
-toggle word wrap: key(alt-z)
-show menu: key(alt)
-search everywhere: key(ctrl-shift-p)
-recent files: key(ctrl-p)
-project: key(ctrl-shift-e)
+toggle word wrap: user.vscode("editor.action.toggleWordWrap")
+recent files: user.vscode("workbench.action.quickOpen")
+project: user.vscode("workbench.view.explorer")
 breadcrumbs: user.vscode("breadcrumbs.focusAndSelect")
 open editors: user.vscode("workbench.files.action.focusOpenEditorsView")
 collapse project: user.vscode("workbench.files.action.collapseExplorerFolders")
 crosshairs: user.vscode("workbench.files.action.showActiveFileInExplorer")
-search file:key(ctrl-f)
-replace in file:key(ctrl-h)
-find in files: key(ctrl-shift-f)
-toggle problems: key(ctrl-shift-m)
-next problem: key(shift-f8)
-complete: key(ctrl-space)
+search file: user.vscode("actions.find")
+replace in file: user.vscode("editor.action.startFindReplaceAction")
+find in files: user.vscode("workbench.action.findInFiles")
+problems: user.vscode("workbench.actions.view.problems")
+complete: user.vscode("editor.action.triggerSuggest")
 format selection: user.vscode("editor.action.formatSelection")
 format document: user.vscode("editor.action.formatDocument")
 
-close editor: key(ctrl-w)
-new editor: key(ctrl-n)
-new window: key(ctrl-shift-n)
+close editor: user.vscode("workbench.action.closeActiveEditor")
+new editor: user.vscode("workbench.action.files.newUntitledFile")
+new window: user.vscode("workbench.action.newWindow")
 
-split editor: key(ctrl-\)
-split editor down:
-    key(ctrl-k)
-    key(ctrl-\)
+split editor: user.vscode("workbench.action.splitEditor")
+split editor down: user.vscode("workbench.action.splitEditorDown")
 split end: user.vscode("workbench.action.joinAllGroups")
 
-editor one: key(ctrl-1)
-editor two: key(ctrl-2)
-editor three: key(ctrl-3)
-editor for: key(ctrl-4)
-editor five: key(ctrl-5)
-editor six: key(ctrl-6)
+editor one: user.vscode("workbench.action.focusFirstEditorGroup")
+editor two: user.vscode("workbench.action.focusSecondEditorGroup")
 
 lint disable line: insert("// eslint-disable-next-line no-console")
 
-go to definition: key(f12)
-find references: key(shift-alt-f12)
+go to definition: user.vscode("editor.action.revealDefinition")
+find references: user.vscode("editor.action.findReferences")
 
 tidy search:
-    key(ctrl-f)
+    user.vscode("actions.find")
     key(backspace)
-    key(ctrl-h)
+    user.vscode("editor.action.startFindReplaceAction")
     key(backspace)
     key(escape)
-
-tidy find in files:
-    key(ctrl-shift-f)
-    key(backspace)
-    key(ctrl-shift-e)
-
-auto compile less:
-    key("ctrl-`")
-    sleep(200ms)
-    insert("npm run less\n")
-    sleep(2000ms)
-    key("ctrl-`")
 
 # source control
 source control: user.vscode("workbench.view.scm")
