@@ -1,12 +1,9 @@
 os: linux
 -
-window max:key("super-up")
-window left:key("super-left")
-window right:key("super-right")
-window mid:key("super-down")
-window minimize:key("super-h")
+# bugfix as this didn't work in Linux
+snap full:key("super-up")
 
-focus toggle:key("alt-tab")
+switch:key("alt-tab")
 
 focus files:key("super-1")
 focus terminal:key("super-2")
