@@ -8,7 +8,13 @@ __pycache__
 /custom/*-sensitive.talon
 .vscode/settings.json
 .DS_Store
-.bak
+*.bak
+# Emacs (from https://github.com/github/gitignore/blob/main/Global/Emacs.gitignore)
+*~
+\#*\#
+.\#*
+# Vim (from https://github.com/github/gitignore/blob/main/Global/Vim.gitignore)
+[._]*.swp
 
 system_paths-N2650.talon-list
 system_paths-DESKTOP-18DV23T.talon-list
