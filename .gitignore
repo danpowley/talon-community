@@ -2,10 +2,6 @@
 __pycache__
 *.sw?
 .idea/
-# Locally generated
-/settings/websites.csv
-/settings/system_paths.csv
-/custom/*-sensitive.talon
 .vscode/settings.json
 .DS_Store
 *.bak
@@ -16,6 +12,14 @@ __pycache__
 # Vim (from https://github.com/github/gitignore/blob/main/Global/Vim.gitignore)
 [._]*.swp
 
+# we highly recommended against removing the private folder from the gitignore file
+# the directory is used to store sensitive information such as contacts
+/private
+
+# Locally generated
+/settings/websites.csv
+/settings/system_paths.csv
+/custom/*-sensitive.talon
 system_paths-N2650.talon-list
 system_paths-DESKTOP-18DV23T.talon-list
 system_paths-*Mac*.talon-list
