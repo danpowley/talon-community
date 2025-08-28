@@ -16,11 +16,6 @@ __pycache__
 # the directory is used to store sensitive information such as contacts
 /private
 
-# Locally generated
-/settings/websites.csv
-/settings/system_paths.csv
+# Sensitive files to exclude
 /custom/*-sensitive.talon
-system_paths-N2650.talon-list
-system_paths-DESKTOP-18DV23T.talon-list
-system_paths-*Mac*.talon-list
-system_paths.csv-converted-to-talon-list
+system_paths-*

@@ -65,6 +65,11 @@ show git output: user.vscode("git.showOutput")
 close all diff editors: user.vscode("git.closeAllDiffEditors")
 toggle diff: user.vscode("toggle.diff.renderSideBySide")
 
+# database
+database: user.vscode("workbench.view.extension.objectExplorer")
+new query: user.vscode("mssql.newQuery")
+(run|execute) query: user.vscode("mssql.runQuery")
+
 # debug
 step over:key("f10")
 step into:key("f11")
@@ -87,10 +92,6 @@ clear bookmarks all files: user.vscode("bookmarks.clearFromAllFiles")
 # markdown
 markdown preview: user.vscode("markdown.showPreview")
 markdown source: user.vscode("markdown.showSource")
-
-# SQL
-(run|execute) query: user.vscode("mssql.runQuery")
-new query: user.vscode("mssql.newQuery")
 
 # Cursorless
 # e.g. "google search line green salty" (search google with everything matched by "line green salty")

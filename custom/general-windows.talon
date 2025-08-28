@@ -1,6 +1,6 @@
-os: linux
+os: windows
 -
 (screen lock) | (lock screen):
     speech.disable()
     sleep(1000ms)
-    key(super-l)
+    user.custom_lock_screen()
