@@ -1,6 +1,5 @@
-os: linux
-app: jetbrains
-app: gnome-terminal
+os: windows
+app: windowsterminal.exe
 app: vscode
 -
 check IP address: insert("curl http://checkip.amazonaws.com")
