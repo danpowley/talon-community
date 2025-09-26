@@ -71,6 +71,7 @@ new query: user.vscode("mssql.newQuery")
 (run|execute) query: user.vscode("mssql.runQuery")
 
 # debug
+debug: user.vscode("workbench.view.debug")
 step over:key("f10")
 step into:key("f11")
 step out:key("shift-f11")
@@ -79,7 +80,7 @@ stop debugging:key("shift-f5")
 restart debugging:key("ctrl-shift-f5")
 
 # bookmarks
-bookmark panel: user.vscode("bookmarksExplorer.focus")
+marks: user.vscode("bookmarksExplorer.focus")
 file bookmarks: user.vscode("bookmarks.list")
 all bookmarks: user.vscode("bookmarks.listFromAllFiles")
 bookmark: user.vscode("bookmarks.toggle")
